@@ -2,7 +2,6 @@
   "name": "holding",
   "private": true,
   "dependencies": {
-    "jquery": "~1.11.1",
-    "mapbox.js": "~2.1.3"
+    "jquery": "~1.11.1"
   }
 }

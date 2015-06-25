@@ -24,14 +24,22 @@ $(function() {
       $('.pane').first().addClass('active');
       $('.nav-left a').first().addClass('active');
     }
-    $('.nav-left a').click(function(e) {
+    var changeTab = function(e) {
+      var tab = $(this).data('link');
       $('.pane').removeClass('active');
       $('.nav-left a').removeClass('active');
-      $('.pane-' + $(this).data('link')).addClass('active');
-      $(this).addClass('active');
-    })
+      $('.pane-' + tab).addClass('active');
+      var navLeft = $("."+$(this).data('link'));
+      if(navLeft.length>0){
+        navLeft.addClass('active');
+      } else {
+        $(this).addClass('active');
+      }
+    }
+    $('.toplink').click(changeTab);
+    $('.nav-left a').click(changeTab);
   }
-  $('.login-btn').click(function() {
+  var login = function(){
     FB.login(function(response) {
      if (response.authResponse) {
        window.location = "http://app.backtrackerapp.com";
@@ -39,5 +47,7 @@ $(function() {
        
      }
    }, {scope: 'public_profile,email,user_friends'});
-  });
+  }
+  $('.login-btn').click(login);
+  $('.banner').click(login);
 });
