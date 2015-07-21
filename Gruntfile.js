@@ -30,23 +30,14 @@ module.exports = function (grunt) {
 
     s3: {
       options: {
-        key: '***REMOVED***',
-        secret: '***REMOVED***',
+        accessKeyId: '***REMOVED***',
+        secretAccessKey: '***REMOVED***',
         bucket: 'www.backtrackerapp.com',
-        access: 'public-read',
         region: 'eu-west-1'
       },
-      dist: {
-        options: {
-          encodePaths: false,
-          maxOperations: 20
-        },
-        upload: [{
-          src: 'dist/**',
-          dest: '',
-          rel: 'dist',
-          options: {gzip: true}
-        }]
+      build: {
+        cwd: "dist",
+        src: "**"
       }
     },
 
