@@ -28,12 +28,14 @@ module.exports = function (grunt) {
     // Project settings
     config: config,
 
+    aws: grunt.file.readJSON('./grunt-aws.json'),
+
     s3: {
       options: {
-        accessKeyId: '***REMOVED***',
-        secretAccessKey: '***REMOVED***',
-        bucket: 'www.backtrackerapp.com',
-        region: 'eu-west-1'
+        accessKeyId: '<%= aws.key %>',
+        secretAccessKey: '<%= aws.secret %>',
+        bucket: '<%= aws.bucket %>',
+        region: '<%= aws.region %>'
       },
       build: {
         cwd: "dist",
