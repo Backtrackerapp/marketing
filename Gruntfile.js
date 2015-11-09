@@ -426,7 +426,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    's3'
   ]);
 
   grunt.registerTask('default', [

@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 $(function(videojs) {
     $('.responsive-nav-button').click(function() {
@@ -51,7 +51,6 @@ $(function(videojs) {
             bottom = ($('body').scrollTop()) - (parallax.position().top  + 235)
             if(top > 0 && bottom < 0) {
                 var delta = initTop[el] - (top)/10
-                console.log(delta);
                 parallax.find('img').css('top', delta);
             }
     }
@@ -69,14 +68,14 @@ $(function(videojs) {
         setTimeout(function(){
             video.play();
         }, 1000);
-    }
+    };
 
     var hideVideo = function (e) {
         $('.header-video').removeClass('show');
         $('.header-content').removeClass('video');
         $('.header-foot').removeClass('video');
         video.pause();
-    }
+    };
 
     $('.video-btn').click(showVideo);
     $('.close-btn').click(hideVideo);
