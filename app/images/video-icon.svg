@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>video-icon-homepage</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="homepage" sketch:type="MSArtboardGroup" transform="translate(-677.000000, -410.000000)">
+            <g id="video-icon-homepage" sketch:type="MSLayerGroup" transform="translate(678.000000, 411.000000)">
+                <circle id="Oval-1" stroke="#084C6D" stroke-width="2" fill-opacity="0.7" fill="#F3F3F3" sketch:type="MSShapeGroup" cx="42" cy="42" r="42"></circle>
+                <path d="M32,62 L32,22 L60,42 L32,62 Z" id="Triangle-1" fill="#084C6D" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

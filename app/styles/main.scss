@@ -652,7 +652,23 @@ footer {
     top: 0;
     width: 100%;
     transition: top .3s;
-
+    .login {
+        margin: 11px;
+        a {
+            background: $orange;
+            width: 100px;
+            height: 38px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1px;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
     &.shown {
         top: 300px;
     }
@@ -736,6 +752,17 @@ footer {
         padding-top: 150px;
         transition: top 1s;
         top: 0;
+        a {
+            text-decoration: none;
+            color: $darkBlue;
+            background: rgba(242, 242, 242, 0.70);
+            border: 2px solid $darkBlue;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            display: block;
+            width: 240px;
+            margin: 0 auto;
+        }
         h1 {
             color: white;
             text-shadow: 1px 1px 0 black;
@@ -1097,11 +1124,20 @@ footer {
         height: 100%;
         display: flex;
         justify-content: center;
-        h2 {
+        a {
+            text-decoration: none;
+            color: $darkBlue;
+            background: rgba(242, 242, 242, 0.70);
+            border: 2px solid $darkBlue;
             z-index: 1;
-            align-self: center;
-            color: white;
-            font-size: 40px;
+            padding: 15px 30px;
+            display: block;
+            width: 240px;
+            margin: 0 auto;
+            height: 67px;
+            text-align: center;
+            margin-top: 125px;
+            font-size: 26px;
         }
     }
 }
